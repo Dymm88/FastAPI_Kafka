@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fastapiproject"
+version = "0.1.0"
+description = ""
+authors = ["Dmitriy <ulrht88@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["all"], version = "^0.115.4"}
+asyncpg = "^0.30.0"
+black = "^24.10.0"
+uvicorn = "^0.32.0"
+sqlalchemy = "^2.0.36"
+confluent-kafka = "^2.6.0"
+
+[tool.poetry.group.dev.dependencies]
+SQLAlchemy = "^2.0.36"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
